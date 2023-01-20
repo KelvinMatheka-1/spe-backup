@@ -16,7 +16,8 @@ function UserProfile() {
         if (
           userProfile.client_image &&
           userProfile.client_name &&
-          userProfile.email
+          userProfile.email &&
+          userProfile.id
         ) {
           setUserProfile(userProfile);
         } else {
@@ -41,6 +42,7 @@ console.log(userProfile)
       <p><i class="fa-solid fa-user"></i> name: {userProfile.client_name}</p>
       <p><i class="fa-solid fa-paper-plane"></i><span>Email:</span> {userProfile.email}</p>
       <p><i class="fa-solid fa-location-dot"></i> Tickets Bought: {userProfile.bought_tickets}</p>
+
     </div>
       </div>
         ) : (

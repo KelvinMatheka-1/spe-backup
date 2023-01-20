@@ -8,14 +8,29 @@ function MyTickets() {
 
   const [myTickets, setMyTickets] = useState([])
 
+  const [client, setClient] = useState([])
+  useEffect(() => {
+    fetch("/me")
+      .then((r) => {
+        if (r.ok) {
+          return r.json();
+        }
+        throw new Error("Failed to fetch user profile");
+      })
+      .then(setClient)
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   useEffect(() => {
     fetch('/tickets')
     .then(res => res.json())
     .then(data => {
-        // setMyTickets(data.filter(ticket => ticket.client_id === user.id))
-        setMyTickets(data)
+        setMyTickets(data.filter(ticket => ticket.client_id === client.id))
+        // setMyTickets(data)
     })
-  },[])
+  },[client])
 
     return (
     <React.Fragment>

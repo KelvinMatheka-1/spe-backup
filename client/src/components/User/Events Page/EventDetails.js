@@ -4,6 +4,7 @@ import _ from "lodash";
 import getData from "../../../API";
 import { Link } from "react-router-dom";
 import Navigation from "../Navigation";
+import UserProfile from "../Profile/UserProfile";
 
 function EventDetails() {
   const { eventId } = useParams();
@@ -45,12 +46,29 @@ function EventDetails() {
     setComment(e.target.value);
   }
 
-  function handleProceed() {
+  function handleProceed(e) {
     if (total <= 0) {
       setErrorProceed(true);
+  
     } else {
       setErrorProceed(false);
       history.push(`/checkout/${eventId + "-" + total}`);
+
+
+        fetch("/tickets", {
+          method: "POST",
+          body: JSON.stringify({
+            client_id: e.target.id,
+            event_id: eventId
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then(res => res.json())
+        .then(console.log)
+        .catch(console.log)
+
     }
   }
 
@@ -72,7 +90,20 @@ function EventDetails() {
     });
     setComment("");
   }
-
+const [client, setClient] = useState([])
+  useEffect(() => {
+    fetch("/me")
+      .then((r) => {
+        if (r.ok) {
+          return r.json();
+        }
+        throw new Error("Failed to fetch user profile");
+      })
+      .then(setClient)
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
   // console.log(ticketType);
   return (
     <div className="">
@@ -236,11 +267,11 @@ function EventDetails() {
                 </tbody>
               </table>
             </div>
-            <button
+            <button id={client.id}
               type="button"
               className="border bg-[#242565] text-white p-4 uppercase
               text-center tracking-wider"
-              onClick={() => handleProceed()}
+              onClick={(e) => handleProceed(e)}
             >
               Proceed to pay
             </button>
