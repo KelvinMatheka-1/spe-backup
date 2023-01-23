@@ -34,13 +34,13 @@ function Header({ handleToEvents }) {
             >
               View Events
             </button>
-            <button
+            {/* <button
               type="button"
               className="ml-4 border rounded-full py-2 px-4"
               onClick={() => handleToEvents()}
             >
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

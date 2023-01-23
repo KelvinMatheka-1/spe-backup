@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Navigation from "../Navigation";
-import Footer from "../Footer";
 import MyTicketCard from "./MyTicketCard";
 import { NavLink } from "react-router-dom";
 
@@ -56,7 +55,6 @@ function MyTickets() {
             )}
         </div>
     </div>
-    <Footer />
     </React.Fragment>
     )
 }

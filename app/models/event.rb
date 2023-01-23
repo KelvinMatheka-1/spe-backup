@@ -10,8 +10,8 @@ class Event < ApplicationRecord
     validates :ticket_regular, presence: true, numericality: {only_integer: true}
     validates :ticket_vip, presence: true, numericality: {only_integer: true}
     validates :ticket_vvip, presence: true, numericality: {only_integer: true}
-    validates :rating, presence: true, numericality: true
-    validates :available_tickets, presence: true, numericality: {only_integer: true}
+    # validates :rating, presence: true, numericality: true
+    # validates :available_tickets, presence: true, numericality: {only_integer: true}
 
     has_many :tickets, dependent: :destroy
     has_many :clients, through: :tickets

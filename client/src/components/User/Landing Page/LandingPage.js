@@ -25,7 +25,7 @@ function LandingPage({ events, sponsors }) {
         <LandingMakeOwn />
         <LandingBrands />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

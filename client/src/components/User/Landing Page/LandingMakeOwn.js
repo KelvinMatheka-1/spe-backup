@@ -9,7 +9,7 @@ function LandingMakeOwn() {
         className="w-80 object-cover absolute top-[-25%] left-0"
       />
       <div className="center-content flex flex-col items-center justify-center h-full">
-        <h3 className="font-bold text-lg">Make your own Event</h3>
+        <h3 className="font-bold text-lg">Define your own Event</h3>
         <small className="text-gray-500 w-64 py-2">
           Once Logged in, you now have the ability to create your dream event.
           Give it a try 🙂

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Navigation from "../Navigation";
-import Footer from "../Footer";
+
 import EventCard from "./EventCard";
 import Spinner from "../../Spinner";
 import _ from "lodash";
@@ -138,7 +138,7 @@ function EventsPage({ events }) {
               </div>
             </div>
           </div>
-          <Footer />
+
         </>
       )}
     </>

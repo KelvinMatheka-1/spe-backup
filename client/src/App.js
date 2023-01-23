@@ -17,6 +17,7 @@ import UserLogin from "./components/User/UserLogin";
 import Signup from "./components/User/Signup";
 import Checkout from "./components/User/Checkout/Checkout";
 import UserProfile from "./components/User/Profile/UserProfile"
+import CreateEvent from "./components/Admin/CreateEvent";
 
 function App() {
   const [hidden, setHidden] = useState(true);
@@ -71,6 +72,12 @@ function App() {
           <NavBar hidden={hidden} handleHide={handleHide} />
           <Dashboard clients={clients} events={events} />
         </Route>
+        <Route exact path="/admin/addevents">
+        {/* <NavBar hidden={hidden} handleHide={handleHide} /> */}
+          <CreateEvent />
+        </Route>
+
+        
         <Route exact path="/events">
           <EventsPage events={events} />
         </Route>
