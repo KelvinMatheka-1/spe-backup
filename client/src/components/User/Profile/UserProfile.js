@@ -39,9 +39,9 @@ console.log(userProfile)
         </div>
       <div className="profile-details">
       <h3>Welcome</h3>
-      <p><i class="fa-solid fa-user"></i> name: {userProfile.client_name}</p>
-      <p><i class="fa-solid fa-paper-plane"></i><span>Email:</span> {userProfile.email}</p>
-      <p><i class="fa-solid fa-location-dot"></i> Tickets Bought: {userProfile.bought_tickets}</p>
+      <p><i className="fa-solid fa-user"></i> name: {userProfile.client_name}</p>
+      <p><i className="fa-solid fa-paper-plane"></i><span>Email:</span> {userProfile.email}</p>
+      <p><i className="fa-solid fa-location-dot"></i> Tickets Bought: {userProfile.bought_tickets}</p>
 
     </div>
       </div>

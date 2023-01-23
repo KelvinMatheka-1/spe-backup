@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import BigScreenHeader from "./BigScreenHeader";
 import Page404 from "./Page404";
 import _ from "lodash";
-import Spinner from "../Spinner";
+// import Spinner from "../Spinner";
 
 function Events({ events }) {
   const [adminInfo, setAdminInfo] = useState({
@@ -16,7 +16,7 @@ function Events({ events }) {
   const [prominentCategory, setProminentCategory] = useState("");
   const [categoryCount, setCategoryCount] = useState(0);
 
-  function sumn(id) {}
+  // function sumn(id) {}
 
   useEffect(() => {
     const locations = events.map((event) => event.location.location_name);
@@ -65,7 +65,7 @@ function Events({ events }) {
           email: data.email,
         })
       );
-  }, []);
+  }, [adminInfo]);
 
   return (
     <>
@@ -160,14 +160,14 @@ function Events({ events }) {
               </span>
             </div>
           </div>
-
-          <button type="button">Create Event</button>
+{/* 
+          <button type="button">Create Event</button> */}
           <h3 className="text-center my-2">Event Management</h3>
           {events.length > 0 ? (
             <div className="events-wrapper grid md:grid-cols-2 justify-items-center my-4 gap-4">
               {events.map((event) => {
                 return (
-                  <div className="event-card w-64 md:w-3/4 mdPro:w-4/5 h-64 overflow-hidden rounded-md shadow-[#eeeeee] hover:shadow-lg flex bg-gray-800">
+                  <div key={event.id} className="event-card w-64 md:w-3/4 mdPro:w-4/5 h-64 overflow-hidden rounded-md shadow-[#eeeeee] hover:shadow-lg flex bg-gray-800">
                     <div className="w-1/2 relative">
                       <img
                         src={event.event_card_image}
