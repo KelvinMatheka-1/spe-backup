@@ -58,20 +58,20 @@ function EventsPage({ events }) {
             >
               Splendid Events
             </NavLink>
-            <form>
+            {/* <form>
               <input
                 type="search"
                 placeholder="Search..."
                 className="rounded-full p-2 bg-gray-300 text-[#242565] px-4"
               />
-            </form>
+            </form> */}
             <Navigation />
           </div>
           <div className="main-wrapper pt-20 px-4 flex flex-col bg-gray-200">
             {/* Festivals */}
-            <div className="festivals my-8">
-              <h3 className="category-title">Festivals</h3>
-              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6">
+            <div className="festivals my-8" >
+              <h3 className="category-title" id="category">Festivals</h3>
+              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6" id="cards">
                 {categories.festivals.map((event) => (
                   <EventCard event={event} key={event.id} />
                 ))}
@@ -80,8 +80,8 @@ function EventsPage({ events }) {
 
             {/* Music */}
             <div className="music my-8">
-              <h3 className="category-title">Music</h3>
-              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6">
+              <h3 className="category-title" id="category">Music</h3>
+              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6" id="cards">
                 {categories.music.map((event) => (
                   <EventCard event={event} key={event.id} />
                 ))}
@@ -90,8 +90,8 @@ function EventsPage({ events }) {
 
             {/* Tech */}
             <div className="tech my-8">
-              <h3 className="category-title">Tech</h3>
-              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6">
+              <h3 className="category-title" id="category">Tech</h3>
+              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6" id="cards">
                 {categories.tech.map((event) => (
                   <EventCard event={event} key={event.id} />
                 ))}
@@ -100,8 +100,8 @@ function EventsPage({ events }) {
 
             {/* Art */}
             <div className="art my-8">
-              <h3 className="category-title">Art</h3>
-              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6">
+              <h3 className="category-title" id="category">Art</h3>
+              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6" id="cards">
                 {categories.art.map((event) => (
                   <EventCard event={event} key={event.id} />
                 ))}
@@ -110,8 +110,8 @@ function EventsPage({ events }) {
 
             {/* Corporate */}
             <div className="corporate my-8">
-              <h3 className="category-title">Corporate</h3>
-              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6">
+              <h3 className="category-title" id="category">Corporate</h3>
+              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6" id="cards">
                 {categories.corporate.map((event) => (
                   <EventCard event={event} key={event.id} />
                 ))}
@@ -120,8 +120,8 @@ function EventsPage({ events }) {
 
             {/* Educational */}
             <div className="educational my-8">
-              <h3 className="category-title">Educational</h3>
-              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6">
+              <h3 className="category-title" id="category">Educational</h3>
+              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6" id="cards">
                 {categories.educational.map((event) => (
                   <EventCard event={event} key={event.id} />
                 ))}
@@ -130,8 +130,8 @@ function EventsPage({ events }) {
 
             {/* Sports */}
             <div className="sports my-8">
-              <h3 className="category-title">Sports</h3>
-              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6 mb-6">
+              <h3 className="category-title" id="category">Sports</h3>
+              <div className="grid mdPro:grid-cols-3 mdMore:grid-cols-2 justify-items-center gap-y-8 gap-x-6 mb-6" id="cards">
                 {categories.sports.map((event) => (
                   <EventCard event={event} key={event.id} />
                 ))}

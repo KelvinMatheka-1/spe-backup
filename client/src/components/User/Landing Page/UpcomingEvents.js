@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Spinner from "../../Spinner";
+// import Spinner from "../../Spinner";
 
 function UpcomingEvents({ events }) {
   return (
-    <div className="mt-32 mb-4 mx-8">
+    <div className="mb-4 mx-8" id="upcoming">
       <h3 className="text-[#242565] text-2xl font-bold">Upcoming Events</h3>
 
       {events.length > 0 ? (
@@ -43,6 +43,7 @@ function UpcomingEvents({ events }) {
                             : event.description}
                         </p>
                       </div>
+                      
                     </div>
                   </div>
                 </Link>

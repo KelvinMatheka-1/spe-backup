@@ -3,9 +3,9 @@ import React from 'react'
 function HeaderImg() {
   return (
     <img
-      src="assets/headerImg.jpg"
+      src="assets/pexels.jpg"
       alt="header pic"
-      className="w-full h-screen object-cover z-0 brightness-[20%]"
+      className="w-full h-screen object-cover brightness-[20%]"
     />
   );
 }

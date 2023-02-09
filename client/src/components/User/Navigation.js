@@ -54,9 +54,9 @@ function Navigation() {
 
   console.log(user);
   return (
-    <ul className=" flex justify-end gap-12 items-center px-4 z-2">
+    <ul className=" flex justify-end gap-12 items-center px-4 z-2" id="navbar">
       <NavLink exact to="/events">
-        Schedule
+        Events
       </NavLink>
       <NavLink exact to="/mytickets">
         My Tickets

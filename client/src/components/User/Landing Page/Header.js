@@ -15,13 +15,13 @@ function Header({ handleToEvents }) {
           <Navigation />
         </div>
       </div>
-      <div className="absolute top-[30%] w-full lg:space-x-32 px-12 flex items-center justify-between text-white ">
-        <div className="text-7xl uppercase font-semibold font-awesome tracking-wider">
-          Splendid Events
+      <div className="absolute top-[30%] w-full lg:space-x-35 px-13 flex items-center justify-between text-white " id="headertext">
+        <div className="text-7xl uppercase font-semibold font-awesome tracking-wide">
+          <span id="splendid-span">Splendid </span><span id="events-span">Events</span>
         </div>
         <div className=" font-awesome">
           <h3 className="text-3xl">Your one-stop site for exclusive events</h3>{" "}
-          <p className="w-3/4 p-2">
+          <p className="w-3/4 p-3">
             Look no further! With an all new look and feel designed to give you
             the best user experience while at the same time meeting and going
             beyond your expectations.

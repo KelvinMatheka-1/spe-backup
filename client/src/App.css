@@ -82,3 +82,71 @@
   margin-top: 20px;
   display: flexbox;
 }
+
+.sponsors{
+  overflow: hidden;
+  width: 1420px;
+  height: 30vh;
+  border-right: 1px black solid;
+  border-left: 1px black solid;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+
+}
+.sponsors ul{
+  display: flex;
+  animation: cambio 50s infinite linear;
+}
+
+
+.sponsors img{
+max-height: 80px;
+margin-left: 100px;
+
+}
+
+@keyframes cambio {
+  from {margin-left: 0%}
+  to {margin-left: -100%}
+}
+
+#define{
+  margin-top: 50px;
+}
+
+#headertext{
+  margin-top: 8%;
+}
+
+#navbar{
+  background-color: #000000;
+  border-radius: 8px;
+  opacity: .8;
+}
+
+#events-span{
+  color: rgb(252, 21, 117);
+  font-size: larger;
+  margin-left: 50px;
+}
+
+#splendid-span{
+  font-size: larger;
+  margin-left: 50px;
+  
+}
+
+#upcoming{
+
+}
+
+#category{
+  color: #313131;
+  font-size: 35px;
+  border-bottom: 3px solid rgb(250, 20, 135);
+}
+
+#cards{
+  margin-top: 30px;
+  justify-content: center;
+}

@@ -65,7 +65,7 @@ function Events({ events }) {
           email: data.email,
         })
       );
-  }, [adminInfo]);
+  }, []);
 
   return (
     <>
@@ -184,7 +184,6 @@ function Events({ events }) {
                           {event.event_name}
                         </h3>
                       </div>
-                      <div>{}</div>
                     </div>
                   </div>
                 );

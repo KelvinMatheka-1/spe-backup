@@ -31,7 +31,7 @@ function EventCard({ event }) {
         <div className="card-footer bg-[#242565] flex justify-between items-center h-1/3 text-white px-4">
           <div className="footer-available flex flex-col">
             <p>Tickets Available:</p>
-            <p>500</p>
+            <p>{event.available_tickets}</p>
           </div>
 
           <Link

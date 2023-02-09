@@ -39,6 +39,7 @@ function Notifications() {
       ) : (
         <div className="main">
           <BigScreenHeader/>
+          <p>Nothing to see here yet</p>
         </div>
       )}
     </>
