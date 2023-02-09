@@ -17,6 +17,7 @@ function UserProfile() {
           userProfile.client_image &&
           userProfile.client_name &&
           userProfile.email &&
+          // userProfile.bought_tickets &&
           userProfile.id
         ) {
           setUserProfile(userProfile);

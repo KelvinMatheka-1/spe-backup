@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_11_085051) do
     t.string "client_name"
     t.string "client_image"
     t.string "email"
-    t.integer "bought_tickets", default: 0
+    t.integer "bought_tickets"
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

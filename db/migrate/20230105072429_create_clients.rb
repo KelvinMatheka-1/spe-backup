@@ -4,7 +4,7 @@ class CreateClients < ActiveRecord::Migration[7.0]
       t.string :client_name
       t.string :client_image
       t.string :email
-      t.integer :bought_tickets, default: 0
+      t.integer :bought_tickets
       t.string :password_digest
 
       t.timestamps
