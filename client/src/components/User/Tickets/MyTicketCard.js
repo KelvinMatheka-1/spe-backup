@@ -14,36 +14,60 @@ function MyTicketCard({ ticket }) {
     }
 
     return (
-        <div className="container mx-auto px-8 flex flex-row">
-        <div className="ticket h-80 w-5/6 rounded-2xl overflow-hidden flex flex-row" >
-            <img src={ticket.event.event_card_image} alt={ticket.event.event_name} className=" object-cover object-top w-80" />
-            <div className="w-80">
-            <div className="h-1/2 "><br/>
-                <p className="text-center font-serif italic text-3xl font-bold" >{ticket.event.event_name}</p>
-                <p className="font-medium text-xl italic text-center" >{ticket.event.category}</p>
-            </div>
-            <div className="card-body h-1/2" >
-                <p className="font-medium text-xl italic text-center" >{ticket.event.date}</p>
-                <p className="font-medium text-xl italic text-center" >{ticket.event.time}</p>
-            </div>
-            </div>
-            <div className="w-64"><br/>
-                <div className="justify-items-center">
-                    <p className="font-medium text-xl italic text-center">{ticket.event.location.location_name}</p>
-                </div>
-            </div>
-            <div className="w-64 card-footer bg-[#242565] items-center p-2 text-white">
-                <div className="h-3/4">
-                    <img src="/assets/stamp2.png" alt="guarantee" />
-                </div>
-                <div className="flex flex-row gap-4">
-                    <button type="submit" className="bg-[#F5167E] rounded hover:scale-[1.03] transition duration-[1s] ease-in-out py-2 px-4" onClick={handleViewEvent} id={ticket.event.id} >View event</button>
-                    <br/>
-                    <button type="submit" className="bg-[#F5167E] rounded hover:scale-[1.03] transition duration-[1s] ease-in-out py-2 px-4" onClick={handleDelete} id={ticket.id} >Cancel ticket</button>
-                </div>
-            </div>
-        </div>
-        </div>
+        <>
+<div className='ticket'>
+<div className='ticketimage'>
+  <p class="sidewords">
+    <span>splendid</span>
+    <span>events</span>
+    <span>tickets</span>
+  </p>
+  <img src={ticket.event.event_card_image} alt="" />
+</div>
+
+<div className='ticketcontent1'>
+  <p className='headerdates'><span>Ksh:{ticket.event.ticket_regular}</span> <span className='headermonth'>{ticket.event.date}</span> <span>Ksh:{ticket.event.ticket_regular}</span></p>
+  <div className='ticketname'>
+    <h2>{ticket.event.event_name}</h2>
+    <h6>Attending</h6>
+  </div>
+
+  <div className='tickettime'>
+    <p>{ticket.event.time}Am/Pm. Have fun...</p>
+  </div>
+
+  <div className='tagline'>
+      <p>Tickets Not Refundable</p>
+  </div>
+   <p className='ticketlocation'><span>Location</span><span>Nairobi, Parklands</span></p>
+</div>
+
+
+<div className='ticketcontent2'>
+  <p class="sidewords2">
+          <span>splendid</span>
+          <span>events</span>
+          <span>tickets</span>
+    </p>
+  <div className='ticketinfo2'>
+    <div className='ticketname2'>
+        <h3>{ticket.event.event_name}</h3>
+    </div>
+    <div className='tickettime2'>
+      <p>{ticket.event.date}</p>
+      <p>{ticket.event.time} TBD</p>
+    </div>
+    <div class="barcode">
+              <img src="https://i.imgur.com/HMAAsVO.png" alt="QR code"></img>
+          </div>
+  </div>
+</div>
+    <div className="ticket-button">
+        {/* <button type="submit" onClick={handleViewEvent} id={ticket.event.id} >View event</button> */}
+        <button type="submit" onClick={handleDelete} id={ticket.id} >Cancel Ticket</button>
+    </div>
+</div>
+</>
     )
 }
 

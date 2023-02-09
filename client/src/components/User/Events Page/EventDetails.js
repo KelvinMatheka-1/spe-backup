@@ -123,7 +123,7 @@ const [client, setClient] = useState([])
               Buy Ticket
             </a>
           </div>
-          <div className="p-4 h-[500px] flex md:flex-row gap-6 border-b flex-col">
+          <div className="p-4 h-[600px] flex md:flex-row gap-6 border-b flex-col">
             <img
               src={foundEvent.event_card_image}
               alt={foundEvent.event_name}
