@@ -157,7 +157,7 @@ margin-left: 100px;
   max-height: 350px;
   border-radius: 5px;
 	display: flex;
-	background: rgb(180, 180, 180);
+	background: rgba(255, 227, 227, 0.64);
 	box-shadow: rgba(0, 0, 0.3, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.45) 0px 15px 12px;
 }
 .ticketcontent1{
@@ -323,7 +323,12 @@ margin-left: 100px;
 }
 
 .ticket-button{
-  background-color: #8d7659;
-  color: rgba(25, 25, 25, 0.381);
+  background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), 
+  radial-gradient(circle, transparent 20%, #3b3b3b 20%, #000000 80%, transparent 80%, transparent) 25px 25px,
+   linear-gradient(#000000 2px, transparent 2px) 0 -1px, 
+   linear-gradient(90deg, #000000 2px, #434343 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  
+  color: rgb(255, 255, 255);
   font-weight: bolder;
 }
