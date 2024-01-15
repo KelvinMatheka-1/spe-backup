@@ -25,7 +25,7 @@ function App() {
   const [events, setEvents] = useState([]);
   const [deleting, setIsDeleting] = useState(false);
   const [sponsors, setSponsors] = useState([]);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
   function handleHide() {
     setHidden(!hidden);
   }
