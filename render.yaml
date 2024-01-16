@@ -1,18 +1,18 @@
 databases:
-  - name: kelvin
-    databaseName: kelvin
-    user: kelvin
+  - name: mysite
+    databaseName: mysite
+    user: mysite
 
 services:
   - type: web
-    name: kelvin
+    name: mysite
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: kelvin
+          name: mysite
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
