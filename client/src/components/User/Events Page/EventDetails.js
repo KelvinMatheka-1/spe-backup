@@ -49,26 +49,23 @@ function EventDetails() {
   function handleProceed(e) {
     if (total <= 0) {
       setErrorProceed(true);
-  
     } else {
       setErrorProceed(false);
       history.push(`/checkout/${eventId + "-" + total}`);
 
-
-        fetch("/tickets", {
-          method: "POST",
-          body: JSON.stringify({
-            client_id: e.target.id,
-            event_id: eventId
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        })
-        .then(res => res.json())
+      fetch("/tickets", {
+        method: "POST",
+        body: JSON.stringify({
+          client_id: e.target.id,
+          event_id: eventId,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => res.json())
         .then(console.log)
-        .catch(console.log)
-
+        .catch(console.log);
     }
   }
 
@@ -90,7 +87,7 @@ function EventDetails() {
     });
     setComment("");
   }
-const [client, setClient] = useState([])
+  const [client, setClient] = useState([]);
   useEffect(() => {
     fetch("/me")
       .then((r) => {
@@ -267,14 +264,16 @@ const [client, setClient] = useState([])
                 </tbody>
               </table>
             </div>
-            <button id={client.id}
-              type="button"
-              className="border bg-[#242565] text-white p-4 uppercase
-              text-center tracking-wider"
-              onClick={(e) => handleProceed(e)}
-            >
-              Proceed to pay
-            </button>
+            {client && (
+              <button
+                id={client.id}
+                type="button"
+                className="border bg-[#242565] text-white p-4 uppercase text-center tracking-wider"
+                onClick={(e) => handleProceed(e)}
+              >
+                Proceed to pay
+              </button>
+            )}
             {errorProceed ? (
               <div className="bg-[#e69494] p-4 text-white my-2 text-left">
                 Please select a ticket type
