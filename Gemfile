@@ -14,7 +14,7 @@ gem "rails", "~> 7.0.4"
 
 gem 'pg'
 
-# gem 'rack-cors'
+gem 'rack-cors'
 gem 'rails_12factor', group: :production
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
