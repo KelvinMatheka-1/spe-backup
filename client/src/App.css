@@ -1,0 +1,335 @@
+.mainprofilebox {
+  font-family: "Poppins", sans-serif;
+  background: hsla(141, 54%, 86%, 1);
+
+  background: linear-gradient(
+    to right,
+    hsla(141, 54%, 86%, 1) 0%,
+    hsla(333, 73%, 85%, 1) 50%,
+    hsla(211, 58%, 79%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    to right,
+    hsla(141, 54%, 86%, 1) 0%,
+    hsla(333, 73%, 85%, 1) 50%,
+    hsla(211, 58%, 79%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    to right,
+    hsla(141, 54%, 86%, 1) 0%,
+    hsla(333, 73%, 85%, 1) 50%,
+    hsla(211, 58%, 79%, 1) 100%
+  );
+}
+
+.card{
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 20px;
+  color: #525252;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  column-gap: 20px;
+  box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+}
+.col {
+  width: 50%;
+}
+
+.flex-container {
+  display: flex;
+  column-gap: 15px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.space-between {
+  justify-content: space-between;
+}
+.img-placeholder {
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: larger;
+}
+.card p {
+  font-weight: 500;
+}
+.card a {
+  color: #888;
+  text-decoration: none;
+}
+.card a:hover {
+  color: inherit;
+}
+.card span {
+  font-weight: 500;
+}
+.profile-details{
+  margin-top: 20px;
+  display: flexbox;
+}
+
+.sponsors{
+  overflow: hidden;
+  width: 1420px;
+  height: 30vh;
+  border-right: 1px black solid;
+  border-left: 1px black solid;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+
+}
+.sponsors ul{
+  display: flex;
+  animation: cambio 50s infinite linear;
+}
+
+
+.sponsors img{
+max-height: 80px;
+margin-left: 100px;
+
+}
+
+@keyframes cambio {
+  from {margin-left: 0%}
+  to {margin-left: -100%}
+}
+
+#define{
+  margin-top: 50px;
+}
+
+#headertext{
+  margin-top: 8%;
+}
+
+#navbar{
+  background-color: #ffffff4b;
+  border-radius: 8px;
+  opacity: .8;
+  padding: 5px;
+}
+
+#events-span{
+  color: rgb(252, 21, 117);
+  font-size: larger;
+  margin-left: 50px;
+}
+
+#splendid-span{
+  font-size: larger;
+  margin-left: 50px;
+  
+}
+
+
+
+#category{
+  color: #404040;
+  font-size: 35px;
+  border-bottom: 3px solid rgb(250, 20, 135);
+}
+
+#cards{
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.ticket{
+  
+  margin-top: 50px;
+  margin-left: 50px;
+  max-width: 65%;
+  max-height: 350px;
+  border-radius: 5px;
+	display: flex;
+	background: rgba(190, 176, 176, 0.64);
+	box-shadow: rgba(0, 0, 0.3, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.45) 0px 15px 12px;
+}
+.ticketcontent1{
+  border-left: 1px dashed #000000;
+  border-right: 1px dashed #000000;
+  display: flex;
+}
+.ticket .ticketimage img{
+  height: 290px;
+	width: 380px;
+  background-size: cover;
+}
+.ticket .ticketcontent1{
+  padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+}
+.headerdates{
+  border-top: 1px solid rgb(73, 73, 73);
+	border-bottom: 1px solid rgb(60, 60, 60);
+	padding: 5px 0;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerdates span:first-child {
+	text-align: left;
+	width: 100px;
+}
+
+.headerdates span:last-child {
+	text-align: right;
+	width: 100px;
+  
+}
+.headermonth {
+  color: #597898;
+	font-size: 20px;
+	width: 120px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tickettime{
+  color: #404040;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-weight: 700;
+}
+.ticketcontent1 .ticketname h2{
+  font-size: 40px;
+  font-weight: 500;
+  font-weight: bolder;
+  color: #515151;
+}
+.tickettime span {
+	font-weight: 400;
+	color: gray;
+}
+.tickettime p{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.tagline {
+	font-weight: 700;
+	font-size: 16px;
+  color: rgb(145, 1, 1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ticketlocation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-top: 8px;
+	border-top: 1px solid gray;
+	font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ticketlocation span:first-child {
+	text-align: left;
+}
+.ticketlocation span:last-child {
+	text-align: right;
+}
+
+.ticketlocation .separator {
+	font-size: 20px;
+}
+.ticket .sidewords{
+  position: absolute;
+	color: darkgray;
+	height: 250px;
+	padding: 0 0px;
+	letter-spacing: 0.15em;
+	font-size: 12px;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+}
+.sidewords span:nth-child(2) {
+	color: white;
+	font-weight: 700;
+}
+.ticketname h2{
+	letter-spacing: 0.05em;
+	font-family: "Saira Stencil One", sans-serif;
+}
+
+.ticketcontent2{
+	width: 225px;
+	border-left: 1px dashed #404040;
+  
+}
+.ticketinfo2{
+  margin-top: 20px;
+  height: 250px;
+	padding: 10px 10px 10px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.sidewords2{
+  color: rgb(131, 130, 130);
+  position: absolute;
+	height: 250px;
+	letter-spacing: 0.15em;
+	font-size: 12px;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+}
+.sidewords2 span:nth-child(2) {
+	color: #3a3a3a;
+}
+
+.ticketname2 h3{
+  font-size: 21px;
+	font-family: "Barlow", sans-serif;
+}
+
+.tickettime2{
+  margin-top: 10px;
+}
+.barcode{
+  width: 150px;
+}
+.barcode img {
+	height: 150px;
+  margin-top: 5px;
+}
+
+.ticket-button{
+  background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), 
+  radial-gradient(circle, transparent 20%, #3b3b3b 20%, #000000 80%, transparent 80%, transparent) 25px 25px,
+   linear-gradient(#000000 2px, transparent 2px) 0 -1px, 
+   linear-gradient(90deg, #000000 2px, #434343 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}

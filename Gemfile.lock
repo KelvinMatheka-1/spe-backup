@@ -102,6 +102,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.5)
     minitest (5.17.0)
     net-imap (0.3.4)
       date
@@ -115,7 +116,6 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
-    pg (1.5.4)
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
@@ -143,11 +143,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.4)
       loofah (~> 2.19, >= 2.19.1)
-    rails_12factor (0.0.3)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.5)
-    rails_stdout_logging (0.0.5)
     railties (7.0.4)
       actionpack (= 7.0.4)
       activesupport (= 7.0.4)
@@ -158,6 +153,8 @@ GEM
     rake (13.0.6)
     reline (0.3.2)
       io-console (~> 0.5)
+    sqlite3 (1.7.0)
+      mini_portile2 (~> 2.8.0)
     thor (1.2.1)
     timeout (0.3.1)
     tzinfo (2.0.5)
@@ -175,11 +172,10 @@ DEPENDENCIES
   bcrypt
   byebug
   debug
-  pg
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.4)
-  rails_12factor
+  sqlite3 (~> 1.4)
   tzinfo-data
 
 RUBY VERSION

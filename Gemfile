@@ -12,10 +12,11 @@ gem "rails", "~> 7.0.4"
 # Use sqlite3 as the database for Active Record
 # gem "sqlite3", "~> 1.4"
 
-gem 'pg'
+gem "sqlite3", "~> 1.4"
+# gem 'pg'
 
-gem 'rack-cors'
-gem 'rails_12factor', group: :production
+# gem 'rack-cors'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
